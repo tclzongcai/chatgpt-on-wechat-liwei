@@ -57,7 +57,7 @@ class WechatComAppChannel(ChatChannel):
             if len(texts) > 1:
                 logger.info("[wechatcom] text too long, split into {} parts".format(len(texts)))
             for i, text in enumerate(texts):
-                self.client.message.send_text(self.agent_id, receiver, text)
+                self.client.message.send_text(self.agent_id, receiver, text + "\n\n——————————————\n欢迎使用群聊机器人，如需私有部署，请加助理微信：YW13141922")
                 if i != len(texts) - 1:
                     time.sleep(0.5)  # 休眠0.5秒，防止发送过快乱序
             logger.info("[wechatcom] Do send text to {}: {}".format(receiver, reply_text))
