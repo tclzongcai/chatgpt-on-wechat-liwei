@@ -8,6 +8,7 @@ from common.log import logger
 from plugins import *
 
 
+
 @plugins.register(
     name="Hello",
     desire_priority=-1,
