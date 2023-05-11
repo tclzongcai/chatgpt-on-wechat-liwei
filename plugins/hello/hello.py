@@ -20,7 +20,7 @@ class Hello(Plugin):
     def __init__(self):
         super().__init__()
         self.handlers[Event.ON_HANDLE_CONTEXT] = self.on_handle_context
-        logger.info("[Hello] inited")
+        logger.info("123123[Hello] inited")
 
     def on_handle_context(self, e_context: EventContext):
         if e_context["context"].type not in [
