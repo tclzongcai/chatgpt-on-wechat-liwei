@@ -23,7 +23,6 @@ from voice.audio_convert import any_to_amr, split_audio
 
 MAX_UTF8_LEN = 2048
 
-
 @singleton
 class WechatComAppChannel(ChatChannel):
     NOT_SUPPORT_REPLYTYPE = []
