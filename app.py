@@ -21,8 +21,7 @@ def sigterm_handler_wrap(_signo):
         sys.exit(0)
 
     signal.signal(_signo, func)
-
-    
+  
 def run():
     try:
         # load config
