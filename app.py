@@ -23,7 +23,6 @@ def sigterm_handler_wrap(_signo):
     signal.signal(_signo, func)
 
     
-
 def run():
     try:
         # load config
